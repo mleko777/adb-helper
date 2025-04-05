@@ -1,31 +1,70 @@
+# ADB Utility Script
 
-ADB Manager
+A powerful and modular Python script designed to manage Android devices via ADB. This tool allows for various device operations like rebooting, file transfers, managing installed apps, system operations, and even some harmless prank functionalities.
 
-ADB Manager is a command-line tool to simplify interactions with Android devices using ADB (Android Debug Bridge). It allows you to perform various operations such as rebooting your device, pushing/pulling files, installing and uninstalling apps, taking screenshots, managing logs, and more, directly from your terminal.
-Features
+## Features
 
-    Reboot Options: Reboot into fastboot, bootloader, system, recovery, or download mode.
+### 1. **Reboot Menu**
+   - Reboot the device into different modes:
+     - **fastboot**: Reboot into fastboot mode.
+     - **bootloader**: Reboot into bootloader mode.
+     - **system**: Reboot into the system.
+     - **recovery**: Reboot into recovery mode.
+     - **download**: Reboot into download mode.
 
-    Push & Pull Files: Easily transfer files between your computer and Android device.
+### 2. **File Operations Menu**
+   - **Push File**: Transfer a file from your computer to the device.
+   - **Pull File**: Transfer a file from the device to your computer.
+   - **Sideload File**: Sideload a ZIP file onto the device.
 
-    Install & Uninstall APKs: Install or uninstall Android applications with ease.
+### 3. **Network Operations Menu**
+   - **adb tcpip**: Enable ADB over TCP/IP (for wireless ADB).
+   - **adb connect**: Connect to a device over TCP/IP using its IP address.
 
-    Logcat: View Android logs with filtering options for errors, warnings, and more.
+### 4. **Installed Apps Menu**
+   - **List Installed Apps**: Display a list of all apps installed on the device.
+   - **Install APK**: Install an APK file onto the device.
+   - **Uninstall App**: Uninstall an app by package name.
 
-    Backup & Restore: Backup your Android device or restore it from a backup.
+### 5. **Logcat Menu**
+   - **Show Logcat**: Display the device's logcat output.
+   - **Clear Logcat**: Clear the current logcat buffer.
+   - **Filter Logcat**: Filter the logcat output by log level (Error, Warning, Info, Debug, Verbose).
 
-    Sideload: Flash ZIP files directly onto your Android device.
+### 6. **System Operations Menu**
+   - **Change System Settings**: Modify system settings such as screen brightness.
+   - **Monitor CPU Usage**: Monitor CPU usage on the device.
+   - **Disable System App**: Disable a system app.
+   - **Clear App Data**: Clear the data of a specified app.
+   - **Check Memory Status**: Check the device's memory usage.
+   - **Set Lockscreen Password**: Set or change the lock screen password on the device.
 
-    Network Connection: Set up ADB over TCP/IP for wireless communication.
+### 7. **Backup Menu**
+   - **Backup Data**: Backup device data to a specified location.
+   - **Restore Data**: Restore data from a backup file.
 
-    Screenshot: Capture screenshots from your Android device.
+### 8. **Trolling/Pranking Options (Harmless and Reversible)**
+   - **Change Wallpaper**: Change the device wallpaper to a funny image.
+   - **Change Notification Sound**: Modify the notification sound to something unusual.
+   - **Change Device Name**: Rename the device to something humorous.
+   - **Enable Vibration**: Enable vibration for every action.
+   - **Enable Touch Sound**: Enable sound on touch events.
+   - **Change Language**: Change the device's system language to something unexpected (e.g., Chinese).
+   - **Change App Icon**: Change the icon of any app (if supported).
+   - **Change Font Size**: Increase the font size to the maximum.
+   - **Hide Clock**: Hide the clock in the notification bar.
+   - **Change Settings Background**: Change the background of the Settings app (if supported).
 
-Requirements
+## Requirements
 
-    Python 3.x
+- **Python 3.x**: Make sure you have Python installed on your system.
+- **ADB**: Ensure that Android Debug Bridge (ADB) is installed and configured on your system.
+- **Device with USB Debugging enabled**: USB Debugging should be enabled on the Android device.
 
-    ADB installed on your system
+## Installation
 
-    An Android device with developer options enabled and USB debugging turned on.
+1. Clone this repository:
 
-    USB cable for initial connection (optional for wireless use once ADB over TCP/IP is set up).
+   ```bash
+   git clone https://github.com/yourusername/adb-utility-script.git
+   cd adb-utility-script
