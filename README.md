@@ -66,5 +66,5 @@ A powerful and modular Python script designed to manage Android devices via ADB.
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/yourusername/adb-utility-script.git
+   git clone https://github.com/mleko777/adb-utility-script.git
    cd adb-utility-script
