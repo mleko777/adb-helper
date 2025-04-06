@@ -1,58 +1,62 @@
-# 🔌 ADB Helper Script v1.2
+# ADB Helper GUI 🛠️
 
-<div align="center">
-  <img src="https://img.shields.io/badge/Python-3.6+-blue?logo=python" alt="Python">
-  <img src="https://img.shields.io/badge/ADB-1.0.41+-green?logo=android" alt="ADB">
-  <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20Mac-lightgrey" alt="Platform">
-  <img src="https://img.shields.io/github/last-commit/mleko777/adb-helper" alt="Last Commit">
-</div>
+![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
+![Platform](https://img.shields.io/badge/Platform-Windows%20|%20Linux%20|%20macOS-lightgrey.svg)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
 
-A comprehensive Python toolkit for advanced Android device management via ADB, featuring both powerful utilities and harmless prank functionalities.
+A powerful GUI tool for Android debugging that simplifies ADB operations with an intuitive interface.
 
-![ADB Helper Interface](demo.gif) *(Example interface animation)*
+## 🌟 Features
 
-## 🌟 Feature Highlights
+### Device Management
+- Reboot options (normal/recovery/bootloader)
+- Wireless ADB connection
+- Device information viewer
 
-### 🚦 Device Control
-- **Reboot Options**:
-  - 🔄 Standard reboot
-  - ⚡ Fastboot mode
-  - 🔧 Recovery mode
-  - 📲 Download mode
-  - 🆘 EDL (Emergency Download)
-  - 👶 Safe Mode
+### File Operations
+- Dual-pane file explorer
+- Batch file transfers
+- Permissions management
+- Screenshot/recording tools
 
-- **System Operations**:
-  - 📊 CPU/Memory monitoring
-  - ⚙️ Settings modification
-  - 🔒 Lockscreen management
+### App Control
+- Install/uninstall APKs
+- Backup/restore with data
+- App info and permissions
+- Battery optimization
 
-### 📁 File Management
-```bash
-► adb push/pull - File transfer
-► adb sideload - Package installation
-► screencap - Screenshot capture
-► screenrecord - Screen recording (MP4)
-```
-+ 😄 Funny wallpaper changes
-+ 🔊 Unexpected notification sounds
-+ 🌍 Language switcher
-+ 🔠 Giant font sizes
-+ 🕰️ Hidden clock
-+ 📱 Fake virus scan (visual only)
+### Developer Tools
+- Real-time logcat viewer
+- Built-in ADB terminal
+- System resource monitoring
+- Process manager
 
-🧰 Advanced Usage
-Backup Options:
-# Full device backup
-adb backup -apk -shared -all -f backup.ab
+## 📦 Installation
 
-# App-specific backup
-adb backup -apk com.example.app -f app_backup.ab
+1. **Prerequisites**:
+   - Python 3.8+
+   - ADB installed and in PATH
 
-## Installation
-
-1. Clone this repository:
-
+2. **Install dependencies**:
    ```bash
-   git clone https://github.com/mleko777/adb-helper.git
-   cd adb-helper
+   pip install pillow requests
+
+3. **Run the application**:
+   ```bash
+   python adbhelper.py
+
+### 🚀 Quick Start
+
+    Connect your Android device via USB (enable USB debugging)
+
+    Launch the application
+
+    Use the tabs to access different features:
+
+        Device: View info and reboot options
+
+        Files: Manage device files
+
+        Apps: Manage installed applications
+
+        Logcat: View system logs
